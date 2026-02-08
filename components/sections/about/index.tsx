@@ -88,10 +88,14 @@ export function AboutSection() {
             className="space-y-4"
           >
             <p className="text-lg">
-            I&apos;m a full-stack developer who enjoys creating functional and user-friendly applications. I use modern web technologies to develop solutions that solve real problems.
+              I&apos;m a passionate software developer who enjoys building clean, efficient, and user-focused applications. 
+              I love solving algorithmic problems and spend most of my time coding, exploring new technologies, 
+              and contributing to open-source projects.
             </p>
+
             <p className="text-lg text-muted-foreground">
-            When I&apos;m not coding, I explore new technologies, stay updated with industry trends, and experiment with personal projects to apply what I&apos;ve learned.
+              As a third-year engineering student, I thrive on tackling new challenges and collaborating with others to build impactful software solutions. 
+              Beyond coding, I have trained in Carnatic music for over 10 years, which serves as my creative escape :)
             </p>
             <div className="flex gap-4 py-4 justify-center md:justify-start">
               

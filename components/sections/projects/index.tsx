@@ -32,7 +32,7 @@ const projects = [
     type: "Personal",
     description: "Built a RAG-based multilingual AI kiosk running on Raspberry Pi 4 using quantized TinyLlama 1.1B.",
     image: "/images/projects/project3.webp",
-    tags: ["Python", "FastAPI", "TinyLlama", "Whisper", "Piper", "pgvector"],
+    tags: ["Python", "FastAPI", "TinyLlama", "pgvector"],
     githubUrl: "https://github.com/akshitasure12/RAG-based-koisk",
   },
 ];
