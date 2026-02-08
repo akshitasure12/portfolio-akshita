@@ -3,21 +3,27 @@
 import { motion } from "framer-motion";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { ContactForm } from "./contact-form";
-import { Github, Linkedin, Mail, Twitter, Instagram } from "lucide-react";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { SiMedium } from "react-icons/si";
 
 const socialLinks = [
   {
-    icon: Github,
+    icon: FaGithub,
     href: "https://github.com/akshitasure12",
     label: "GitHub",
   },
   {
-    icon: Linkedin,
+    icon: FaLinkedin,
     href: "https://www.linkedin.com/in/akshitasure/",
     label: "LinkedIn",
   },
   {
-    icon: Mail,
+    icon: SiMedium,
+    href: "https://medium.com/@akshitasure",
+    label: "Medium",
+  },
+  {
+    icon: FaEnvelope,
     href: "mailto:sureakshita23@gmail.com",
     label: "Email",
   },
@@ -27,10 +33,7 @@ export function ContactSection() {
   return (
     <section id="contact" className="py-20 px-4">
       <div className="max-w-5xl mx-auto">
-        <SectionHeading
-          title="Contact"
-          subtitle="Let's work together"
-        />
+        <SectionHeading title="Contact" subtitle="Let's work together" />
 
         <div className="grid md:grid-cols-2 gap-12 mt-12">
           <motion.div
@@ -41,10 +44,11 @@ export function ContactSection() {
             className="space-y-6"
           >
             <h3 className="text-2xl font-semibold">Get in Touch</h3>
+
             <p className="text-muted-foreground">
-              I&apos;m always interested in hearing about new projects and opportunities.
-              Whether you have a question or just want to say hi, feel free to drop
-              me a message!
+              I&apos;m always interested in hearing about new projects and
+              opportunities. Whether you have a question or just want to say hi,
+              feel free to drop me a message!
             </p>
 
             <div className="flex gap-4">
@@ -54,8 +58,8 @@ export function ContactSection() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-accent hover:bg-accent/80 transition-colors"
                   aria-label={link.label}
+                  className="p-3 rounded-full bg-accent text-muted-foreground hover:text-white hover:bg-accent/80 transition-all"
                 >
                   <link.icon className="h-5 w-5 hover:scale-110 transition-transform" />
                 </a>

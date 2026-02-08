@@ -6,6 +6,8 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { Github, Linkedin, Mail, Twitter, Instagram } from "lucide-react";
 import dynamic from "next/dynamic";
 import { GithubCalendar } from "@/components/github-calendar";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { SiMedium } from "react-icons/si";
 
 const IconCloud = dynamic(() => import("@/components/ui/icon-cloud"), {
   ssr: false,
@@ -15,21 +17,26 @@ const IconCloud = dynamic(() => import("@/components/ui/icon-cloud"), {
 export function AboutSection() {
 
   const socialLinks = [
-    {
-      icon: Github,
-      href: "https://github.com/akshitasure12",
-      label: "GitHub",
-    },
-    {
-      icon: Linkedin,
-      href: "https://www.linkedin.com/in/akshitasure/",
-      label: "LinkedIn",
-    },
-    {
-      icon: Mail,
-      href: "mailto:sureakshita23@gmail.com",
-      label: "Email",
-    },
+  {
+    icon: FaGithub,
+    href: "https://github.com/akshitasure12",
+    label: "GitHub",
+  },
+  {
+    icon: FaLinkedin,
+    href: "https://www.linkedin.com/in/akshitasure/",
+    label: "LinkedIn",
+  },
+  {
+    icon: SiMedium,
+    href: "https://medium.com/@akshitasure",
+    label: "Medium",
+  },
+  {
+    icon: FaEnvelope,
+    href: "mailto:sureakshita23@gmail.com",
+    label: "Email",
+  },
   ];
 
   const slugs = [
