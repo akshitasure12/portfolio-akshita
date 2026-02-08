@@ -33,14 +33,16 @@ export function HeroSection() {
               <Button
                 size="lg"
                 className="group"
-                onClick={() => {
-                  document.querySelector("#projects")?.scrollIntoView({
-                    behavior: "smooth",
-                  });
-                }}
+                asChild
               >
-                View Projects
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                <a
+                  href="/resume.pdf"
+                  download="Akshita_Sure_Resume.pdf"
+                  className="flex items-center"
+                >
+                  View Resume
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </a>
               </Button>
               <Button
                 size="lg"
