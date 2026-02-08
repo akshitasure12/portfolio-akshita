@@ -51,7 +51,7 @@ export const metadata: ExtendedMetadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Akshita Sure | Full-Stack Developer & React/Next.js Enthusiast',
+    title: 'Akshita Sure',
     description: 'Explore the portfolio of Akshita Sure, showcasing web development and expertise in React.js and Next.js.',
     image: 'https://portfolio-akshita.vercel.app/site_img.webp',
   },
@@ -65,7 +65,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta property="og:site_name" content="Prem Acharya Portfolio" />
+        <meta property="og:site_name" content="Akshita Sure Portfolio" />
       </head>
       <body suppressHydrationWarning className={inter.className}>
         <ThemeProvider

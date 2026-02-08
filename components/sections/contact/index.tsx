@@ -8,27 +8,17 @@ import { Github, Linkedin, Mail, Twitter, Instagram } from "lucide-react";
 const socialLinks = [
   {
     icon: Github,
-    href: "https://github.com/prem-acharya",
+    href: "https://github.com/akshitasure12",
     label: "GitHub",
   },
   {
     icon: Linkedin,
-    href: "https://www.linkedin.com/in/prem-acharya-38772822b/",
+    href: "https://www.linkedin.com/in/akshitasure/",
     label: "LinkedIn",
   },
   {
-    icon: Twitter,
-    href: "https://x.com/prem__acharya",
-    label: "Twitter",
-  },
-  // {
-  //   icon: Instagram,
-  //   href: "https://www.instagram.com/_premacharya/",
-  //   label: "Instagram",
-  // },
-  {
     icon: Mail,
-    href: "mailto:premacharya2193@gmail.com",
+    href: "mailto:sureakshita23@gmail.com",
     label: "Email",
   },
 ];
