@@ -6,24 +6,12 @@ import { GraduationCap, CalendarClock } from "lucide-react";
 
 const education = [
   {
-    degree: "B.Tech in ICT ( Information and Communication Technology )",
-    institution: "Marwadi University - Rajkot, Gujarat",
-    year: "2021 - 2024",
-    description: "Specialized in Web Development, Iot & Sensors. Graduated with honors.",
-    duration: "3 years",
-    courses: ["Web Technology", "Artificial Intelligence", "Signals and systems", "IoT & Sensors", "Database Management System", "Cloud Computing", "Blockchain"],
-    gpa: "7.6",
-    icon: <GraduationCap />,
-    dateIcon: <CalendarClock />,
-  },
-  {
-    degree: "Diploma in ICT ( Information and Communication Technology )",
-    institution: "Marwadi University - Rajkot, Gujarat",
-    year: "2018 - 2021",
-    description: "Core focus on programming fundamentals, Microprocessor, and Linux Administration.",
-    duration: "3 years",
-    courses: ["Programming Fundamentals", "Data Structures and Algorithms", "Linux Administration", "Routing & Switching", "Probability and Statistics", "Software Engineering", "Microprocessor & Assembly Language"],
-    gpa: "7.8",
+    degree: "B.Tech in CSE ( Computer Science and Engineering )",
+    institution: "Indian Institute of Information Technology, Gwalior - Madhya Pradesh",
+    year: "2023 - 2027",
+    duration: "4 years",
+    courses: ["Operating Systems", "Computer Networks", "Machine Learning", "Software Engineering", "Object Oriented Programming", "Data Structures and Algorithms", "Database Management System"],
+    gpa: "8.87",
     icon: <GraduationCap />,
     dateIcon: <CalendarClock />,
   },
@@ -38,14 +26,16 @@ export function EducationSection() {
           subtitle="Academic background and qualifications"
         />
 
-        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-20 mt-12">
-          {education.map((item, index) => (
-            <EducationCard
-              key={item.degree}
-              {...item}
-              index={index}
-            />
-          ))}
+        <div className="flex justify-center">
+          <div className="w-full max-w-2xl">
+            {education.map((item, index) => (
+              <EducationCard
+                key={item.degree}
+                {...item}
+                index={index}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
