@@ -12,7 +12,7 @@ Clone the repository and install dependencies:
 
 ```bash
 git clone https://github.com/akshitasure12/portfolio-akshita.git
-cd portfolio-nextjs
+cd portfolio-akshita
 npm install
 ```
 
