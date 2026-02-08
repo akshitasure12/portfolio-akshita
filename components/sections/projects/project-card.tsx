@@ -9,11 +9,9 @@ import { cn } from "@/lib/utils";
 interface ProjectCardProps {
   title: string;
   type: string;
-  demo: boolean;
   description: string;
   image: string;
   tags: string[];
-  demoUrl: string;
   githubUrl: string;
   index: number;
 }
@@ -21,11 +19,9 @@ interface ProjectCardProps {
 export function ProjectCard({
   title,
   type,
-  demo,
   description,
   image,
   tags,
-  demoUrl,
   githubUrl,
   index,
 }: ProjectCardProps) {
@@ -63,19 +59,6 @@ export function ProjectCard({
           ))}
         </div>
         <div className="flex gap-4">
-          <Button variant="outline" size="sm" asChild className={cn(demo ? "" : "cursor-not-allowed")}>
-            {demo ? (
-              <a href={demoUrl} target="_blank" rel="noopener noreferrer">
-                <span className="rounded-full w-3 h-3 mr-2 animate-pulse bg-green-500"></span>
-                Demo
-              </a>
-            ) : (
-              <span className="inline-flex items-center">
-                <span className="rounded-full w-3 h-3 mr-2 animate-pulse bg-red-500 to-red-600"></span>
-                Demo
-              </span>
-            )}
-          </Button>
           <Button variant="outline" size="sm" asChild>
             <a href={githubUrl} target="_blank" rel="noopener noreferrer">
               <Github className="h-4 w-4 mr-2" />
