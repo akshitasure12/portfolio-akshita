@@ -5,6 +5,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 // import IconCloud from "@/components/ui/icon-cloud";
 import { Github, Linkedin, Mail, Twitter, Instagram } from "lucide-react";
 import dynamic from "next/dynamic";
+import { GithubCalendar } from "@/components/github-calendar";
 
 const IconCloud = dynamic(() => import("@/components/ui/icon-cloud"), {
   ssr: false,
@@ -121,6 +122,17 @@ export function AboutSection() {
             </motion.div>
           </div>
         </div>
+
+        {/* GitHub Calendar Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="mt-20 w-full"
+        >
+          <GithubCalendar />
+        </motion.div>
       </div>
     </section>
   );
