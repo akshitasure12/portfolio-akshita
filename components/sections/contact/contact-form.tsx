@@ -28,7 +28,7 @@ export function ContactForm() {
     setIsSubmitting(true);
     setSubmitStatus(null);
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/contact`, {
+      const response = await fetch(`/api/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
