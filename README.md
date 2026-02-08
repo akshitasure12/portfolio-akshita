@@ -2,6 +2,8 @@
 
 A modern portfolio website built with **Next.js**, **Tailwind CSS**, and **TypeScript**.
 
+View the live site: https://portfolio-akshita.vercel.app
+
 ## Getting Started
 
 ### Installation

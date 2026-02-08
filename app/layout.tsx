@@ -33,27 +33,27 @@ export const metadata: ExtendedMetadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  title: 'Prem Acharya | Full-Stack Developer & React/Next.js Enthusiast',
-  description: 'Explore the portfolio of Prem Acharya, showcasing web development and expertise in React.js and Next.js.',
-  keywords: 'prem acharya, developer portfolio, dev portfolio, portfolio, full stack developer, frontend developer, backend developer, web design, developer, React js, Next js, node, web development, react developer',
+  title: 'Akshita Sure',
+  description: 'Explore the portfolio of Akshita Sure, showcasing web development and expertise in React.js and Next.js.',
+  keywords: 'akshita sure, developer portfolio, dev portfolio, portfolio, full stack developer, frontend developer, backend developer, web design, developer, React js, Next js, node, web development, react developer',
   openGraph: {
-    title: 'Prem Acharya | Full-Stack Developer & React/Next.js Enthusiast',
-    description: 'Explore the portfolio of Prem Acharya, showcasing web development and expertise in React.js and Next.js.',
-    url: 'https://premacharya.vercel.app/',
+    title: 'Akshita Sure',
+    description: 'Explore the portfolio of Akshita Sure, showcasing web development and expertise in React.js and Next.js.',
+    url: 'https://portfolio-akshita.vercel.app/',
     images: [
       {
-        url: 'https://premacharya.vercel.app/site_img.webp',
+        url: 'https://portfolio-akshita.vercel.app/site_img.webp',
         width: 800,
         height: 600,
-        alt: 'Prem Acharya Portfolio Image',
+        alt: 'Akshita Sure Portfolio Image',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Prem Acharya | Full-Stack Developer & React/Next.js Enthusiast',
-    description: 'Explore the portfolio of Prem Acharya, showcasing web development and expertise in React.js and Next.js.',
-    image: 'https://premacharya.vercel.app/site_img.webp',
+    title: 'Akshita Sure | Full-Stack Developer & React/Next.js Enthusiast',
+    description: 'Explore the portfolio of Akshita Sure, showcasing web development and expertise in React.js and Next.js.',
+    image: 'https://portfolio-akshita.vercel.app/site_img.webp',
   },
 };
 
