@@ -15,9 +15,6 @@ import {
   ContactRound,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
-import logo from "@/public/logo.webp";
-import logoHover from "@/public/logo3.webp";
 import { useModeAnimation } from "@/hooks/useModeAnimation";
 
 const navItems = [
@@ -33,7 +30,6 @@ export function Navbar() {
   const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
-  const [isHovering, setIsHovering] = useState(false);
   const { theme, setTheme } = useTheme();
   const { ref: refDesktop, toggleSwitchTheme: toggleDesktopSwitchTheme } =
     useModeAnimation({
@@ -81,31 +77,11 @@ export function Navbar() {
   if (!mounted) return null;
 
   return (
-    <div className="fixed md:top-0 lg:top-8 inset-x-0 z-50 max-w-6xl lg:max-w-4xl mx-auto ">
-      <nav className="w-full backdrop-blur-sm bg-background/80 border-b md:border-b lg:border border-foreground/40 lg:rounded-2xl">
+    <div className="fixed inset-x-0 top-0 z-50">
+      <nav className="w-full backdrop-blur-sm bg-background/80 border-b border-foreground/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0 flex items-center gap-4">
-              <span
-                className="w-12 h-12 md:w-14 md:h-14 relative"
-                onMouseEnter={() => setIsHovering(true)}
-                onMouseLeave={() => setIsHovering(false)}
-              >
-                <motion.div
-                  animate={{ rotateY: isHovering ? 360 : 0 }}
-                  transition={{ duration: 0.6 }}
-                  className="relative w-full h-full"
-                >
-                  <Image
-                    src={isHovering ? logoHover : logo}
-                    alt="Logo"
-                    width={56}
-                    height={56}
-                    priority
-                    className="object-contain"
-                  />
-                </motion.div>
-              </span>
               <span className="text-lg md:text-xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
                 <a
                   href="#home"
@@ -117,7 +93,7 @@ export function Navbar() {
                     });
                   }}
                 >
-                  Hello World!
+                  Akshita Sure
                 </a>
               </span>
             </div>

@@ -14,11 +14,6 @@ const IconCloud = dynamic(() => import("@/components/ui/icon-cloud"), {
 export function AboutSection() {
 
   const socialLinks = [
-    // {
-    //   icon: Github,
-    //   href: "https://github.com/prem-acharya",
-    //   label: "GitHub",
-    // },
     {
       icon: Github,
       href: "https://github.com/akshitasure12",
@@ -37,33 +32,35 @@ export function AboutSection() {
   ];
 
   const slugs = [
-    "typescript",
+    "python",
+    "tensorflow",
+    "pytorch",
+    "scikitlearn",
+    "pandas",
+    "numpy",
+    "jupyter",
+    "c",
+    "networkx",
+    "cplusplus",
+    "ocaml",
+    "elixir",
     "javascript",
-    "dart",
+    "flask",
+    "nodedotjs",
     "react",
-    "flutter",
-    "raspberrypi",
+    "phoenix",
+    "typescript",
     "html5",
     "css3",
-    "nodedotjs",
+    "mysql",
     "express",
-    "nextdotjs",
-    "prisma",
     "postgresql",
-    "firebase",
     "tailwindcss",
     "vercel",
     "postman",
-    "mongodb",
-    "php",
     "docker",
     "git",
-    "vite",
     "github",
-    "jira",
-    "arduino",
-    "redis",
-    "figma",
   ];
 
   return (
